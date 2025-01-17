@@ -1,1 +1,7 @@
 .env.local
+
+# Dependencies
+**/node_modules
+
+# Production
+/build
