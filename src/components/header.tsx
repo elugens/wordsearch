@@ -25,11 +25,11 @@ export function Header() {
             variant="outline"
             size="sm"
             asChild
-            className="hidden sm:flex"
+            className="hidden sm:flex bg-sky-400"
           >
             <Link href="https://ko-fi.com/elugens" target="_blank" rel="noopener noreferrer">
               <span className="mr-2">☕</span>
-              Buy me a coffee
+              Buy Me a Coffee
             </Link>
           </Button>
           <ThemeToggle />
