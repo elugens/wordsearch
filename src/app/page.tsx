@@ -36,7 +36,7 @@ export default function Home() {
     <div className="container py-8 md:py-12 space-y-8">
       <div className="max-w-4xl mx-auto space-y-8">
         <div className="space-y-4">
-          <h1 className="text-3xl md:text-4xl font-bold text-center title-gradient">
+          <h1 className="text-3xl md:text-3xl font-bold text-center title-gradient">
             AI Word Search Generator
           </h1>
           <p className="text-md md:text-lg text-center text-muted-foreground">

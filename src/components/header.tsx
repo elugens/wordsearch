@@ -11,8 +11,8 @@ export function Header() {
       <div className="container flex h-16 items-center justify-between">
         {/* Logo */}
         <div className="flex items-center gap-2">
-          <div className="bg-primary rounded-lg p-1.5">
-            <Brain className="h-5 w-5 text-primary-foreground" />
+          <div className="bg-primary rounded-lg p-1.5 bg-sky-500">
+            <Brain className="h-5 w-5 text-primary-foreground bg-sky-500" />
           </div>
           <span className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary to-primary/80">
             WordSearch.diy
