@@ -27,7 +27,7 @@ export function Header() {
             asChild
             className="hidden sm:flex bg-sky-400"
           >
-            <Link href="https://ko-fi.com/elugens" target="_blank" rel="noopener noreferrer">
+            <Link href="https://buymeacoffee.com/elugens" target="_blank" rel="noopener noreferrer">
               <span className="mr-2">☕</span>
               Buy Me a Coffee
             </Link>
