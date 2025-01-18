@@ -6,8 +6,15 @@ import { Footer } from '@/components/footer'
 import { GeistSans } from "geist/font/sans";
 
 export const metadata: Metadata = {
-  title: 'WordSearch.diy - AI Word Search Generator',
+  title: 'WordSearch.diy - AI Word Search Generator Tool',
   description: 'Generate custom word search puzzles using AI. Choose your category, complexity, and download as PDF.',
+  metadataBase: new URL('https://wordsearch.diy'),
+  twitter: {
+    card: 'summary_large_image',
+    title: 'WordSearch.diy - AI Word Search Generator Tool',
+    description: 'Generate custom word search puzzles using AI. Choose your category, complexity, and download as PDF.',
+    images: '/images/wordsearch-diy-share-image.png',
+  },
 }
 
 export default function RootLayout({

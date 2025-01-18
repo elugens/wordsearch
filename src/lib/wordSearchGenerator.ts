@@ -144,7 +144,7 @@ export async function generateWordSearch(
     console.error('Error in generateWordSearch:', error);
     // Return a simple default puzzle if something goes wrong
     const defaultGrid = createEmptyGrid(GRID_SIZE);
-    const defaultWords = ['ERROR'];
+    const defaultWords = ['ERROR try generating the puzzle again'];
     placeWord(defaultGrid, 'ERROR', 0, 0, 0, 1);
     fillEmptyCells(defaultGrid);
     return {
