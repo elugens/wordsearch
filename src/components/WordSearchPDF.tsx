@@ -52,6 +52,15 @@ const styles = StyleSheet.create({
     marginBottom: 8,
     fontSize: 12,
   },
+  footer: {
+    position: 'absolute',
+    bottom: 30,
+    left: 40,
+    right: 40,
+    textAlign: 'center',
+    fontSize: 10,
+    color: '#666666',
+  },
 });
 
 interface WordSearchPDFProps {
@@ -88,6 +97,8 @@ export default function WordSearchPDF({ title, grid, words }: WordSearchPDFProps
             ))}
           </View>
         </View>
+        
+        <Text style={styles.footer}>WordSearch.diy - https://www.wordsearch.diy</Text>
       </Page>
     </Document>
   );
