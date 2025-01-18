@@ -69,37 +69,34 @@ interface WordSearchPDFProps {
   words: string[];
 }
 
-export default function WordSearchPDF({ title, grid, words }: WordSearchPDFProps) {
+const WordSearchPDF = ({ title, grid, words }: WordSearchPDFProps) => {
   return (
     <Document>
-      <Page size="LETTER" style={styles.page}>
+      <Page size="A4" style={styles.page}>
         <Text style={styles.title}>{title}</Text>
-        
         <View style={styles.gridContainer}>
           <View style={styles.grid}>
             {grid.map((row, rowIndex) =>
-              row.map((letter, colIndex) => (
+              row.map((cell, colIndex) => (
                 <View key={`${rowIndex}-${colIndex}`} style={styles.cell}>
-                  <Text>{letter}</Text>
+                  <Text>{cell}</Text>
                 </View>
               ))
             )}
           </View>
         </View>
-
-        <View>
-          <Text style={styles.wordsTitle}>Words to Find:</Text>
-          <View style={styles.wordsList}>
-            {words.map((word, index) => (
-              <View key={index} style={styles.word}>
-                <Text>{word}</Text>
-              </View>
-            ))}
-          </View>
+        <Text style={styles.wordsTitle}>Words to Find:</Text>
+        <View style={styles.wordsList}>
+          {words.map((word, index) => (
+            <View key={index} style={styles.word}>
+              <Text>{word}</Text>
+            </View>
+          ))}
         </View>
-        
         <Text style={styles.footer}>WordSearch.diy - https://www.wordsearch.diy</Text>
       </Page>
     </Document>
   );
-}
+};
+
+export default WordSearchPDF;

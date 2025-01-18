@@ -9,8 +9,6 @@ import WordSearchGrid from '@/components/WordSearchGrid';
 import DownloadPDFButton from '@/components/DownloadPDFButton';
 import { generateWordSearch } from '@/lib/wordSearchGenerator';
 
-
-
 export default function Home() {
   const [title, setTitle] = useState('');
   const [category, setCategory] = useState('');
@@ -53,7 +51,7 @@ export default function Home() {
           </a>
         </div>
         <div className="space-y-4">
-          <h1 className="text-3xl md:text-3xl font-bold text-center title-gradient">
+          <h1 className="text-4xl font-bold text-center">
             AI Word Search Generator
           </h1>
           <p className="text-md md:text-lg text-center text-muted-foreground">
@@ -150,6 +148,7 @@ export default function Home() {
             </CardContent>
             <CardFooter>
               <DownloadPDFButton
+                type="word"
                 title={wordSearch.title}
                 grid={wordSearch.grid}
                 words={wordSearch.words}
