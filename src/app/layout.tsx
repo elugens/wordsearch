@@ -3,6 +3,7 @@ import type { Metadata } from 'next'
 import { ThemeProvider } from '@/components/theme-provider'
 import { Header } from '@/components/header'
 import { Footer } from '@/components/footer'
+import { GeistSans } from "geist/font/sans";
 
 export const metadata: Metadata = {
   title: 'WordSearch.diy - AI Word Search Generator',
@@ -15,8 +16,9 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en" className={GeistSans.className} suppressHydrationWarning>
       <body suppressHydrationWarning>
+        {/* place background here if needed*/}
         <ThemeProvider
           attribute="class"
           defaultTheme="light"

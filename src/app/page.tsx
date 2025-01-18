@@ -9,6 +9,8 @@ import WordSearchGrid from '@/components/WordSearchGrid';
 import DownloadPDFButton from '@/components/DownloadPDFButton';
 import { generateWordSearch } from '@/lib/wordSearchGenerator';
 
+
+
 export default function Home() {
   const [title, setTitle] = useState('');
   const [category, setCategory] = useState('');
@@ -44,7 +46,6 @@ export default function Home() {
             Choose the number of words, complexity, and title for your word search. Download as a PDF.
           </p>
         </div>
-
         <Card>
           <CardHeader>
             <CardTitle>Create Your Word Search</CardTitle>
@@ -143,5 +144,6 @@ export default function Home() {
         )}
       </div>
     </div>
+    
   );
 }
