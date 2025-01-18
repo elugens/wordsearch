@@ -37,6 +37,21 @@ export default function Home() {
   return (
     <div className="container py-8 md:py-12 space-y-8">
       <div className="max-w-4xl mx-auto space-y-8">
+        <div className="flex justify-center mb-6">
+          <a 
+            href="https://www.producthunt.com/posts/wordsearch-diy?embed=true&utm_source=badge-featured&utm_medium=badge&utm_souce=badge-wordsearch&#0045;diy" 
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img 
+              src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=794725&theme=light&t=1737225303705" 
+              alt="WordSearch.diy - Create custom word search puzzles with AI!" 
+              width="250" 
+              height="54" 
+              style={{ width: '250px', height: '54px' }}
+            />
+          </a>
+        </div>
         <div className="space-y-4">
           <h1 className="text-3xl md:text-3xl font-bold text-center title-gradient">
             AI Word Search Generator
